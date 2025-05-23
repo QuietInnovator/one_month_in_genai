@@ -15,7 +15,7 @@ if choice == "Home":
     st.write("This is a portfolio of the projects I've done in the last month of playing around with genAI")
     st.write("I've used the following tools:")
     st.write("1. Cursor")
-    st.write("2. Jira")
+    st.write("2. ")
     st.write("3. Notion")
     st.write("4. CrewAI")
     st.write("5. Cursor")
