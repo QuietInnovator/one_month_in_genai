@@ -1,12 +1,13 @@
 # imports
 import streamlit as st
 import sub_apps.summarize_meetings as sm
+import sub_apps.research_writer as rw
 
 st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
 
 # navigation
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "About", "Contact"])
+choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer"])
 
 if choice == "Home":
     # home page
@@ -16,15 +17,13 @@ if choice == "Home":
     st.write("1. Cursor")
     st.write("2. Jira")
     st.write("3. Notion")
-    st.write("4. Cursor")
+    st.write("4. CrewAI")
     st.write("5. Cursor")
 elif choice == "Summarize Meetings":
     # jira page
     st.title("Summarize Meetings")
     sm.summaryapp()
-elif choice == "About":
-    # about page
-    st.title("About")
-elif choice == "Contact":
-    # contact page
-    st.title("Contact")
+elif choice == "Research Writer":
+    # research writer page
+    st.title("Research Writer")
+    rw.research_writer_redirect()
