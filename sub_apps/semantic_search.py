@@ -1,5 +1,20 @@
 import streamlit as st
 
+#----------- description ----------
+def description():
+    """
+    Description of the app
+    input: none
+    output: none
+    """
+    st.subheader("Description")
+    st.write("""
+             My third project Was inspired by the advancements that we can see In the artificial intelligence space.
+             We are now search by meaning, not just by keywordss.
+             So the motivation for this project is to explore semantic search with the Facebook AI semantic search model.
+             """)
+
+
 def semantic_search_redirect():
     st.title("Semantic Search")
     st.write("This is the semantic search app")

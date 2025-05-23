@@ -1,5 +1,17 @@
 import streamlit as st
+#----------- description ----------
+def description():
+    """
+    Description of the app
+    input: none
+    output: none
+    """
+    st.subheader("Description")
+    st.write("""
+             My second project solved a different Pain: I was spending too much time researching for articles in order to write up-to-date newsletters.
+            I I wanted a tool that would use generative AI to automatically find articles online and write for me.
 
+             """)
 def research_writer_redirect():
     st.title("Research Writer")
     st.write("This is the research writer app")

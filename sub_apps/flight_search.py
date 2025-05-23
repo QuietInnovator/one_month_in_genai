@@ -6,6 +6,20 @@ import pandas as pd
 from datetime import datetime, timedelta
 from openai import OpenAI
 
+#----------- description ----------
+def description():
+    """
+    Description of the app
+    input: none
+    output: none
+    """
+    st.subheader("Description")
+    st.write("""
+             My fifth project solves a pain that I had when I was traveling.
+             I was spending too much time searching for flights and Define the best prices.
+             So this project provides away to search for flights and Automatically and instantaneously.
+             """)
+
 def main_form():
     # Main form
     col1, col2 = st.columns(2)

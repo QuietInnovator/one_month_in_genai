@@ -18,6 +18,22 @@ def import_openai_key():
             "or export OPENAI_API_KEY before running."
         )
         st.stop()
+#----------- description ----------
+def description():
+    """
+    Description of the app
+    input: none
+    output: none
+    """
+    st.subheader("Description")
+    st.write("""
+    I started by treying to solve a big pain: I was spending too much time summarizing meeting notes.
+    the first project uses GPT-4o-mini to summarize meeting notes.
+    It can be extended by integrating with Jira, Google Calendar, and other tools.
+    We can use any text, not just a meeting notes.
+    I'm using Streamlit to build the app.
+    I'm using OpenAI API to generate the summary.
+    """)
 
 # ---------- TITLE ----------
 def summary_welcome():
@@ -27,7 +43,6 @@ def summary_welcome():
     output: uploaded file
     """
     
-    st.title("🧾 auto summarizationr")
     st.write("""
     Upload a plain‑text file, let GPT build a Jira issue payload,  
     then optionally POST it to **Webhook.site** (or any webhook endpoint).
@@ -79,6 +94,10 @@ def summaryapp():
     input: none
     output: none
     """
+    st.title("🧾 Meeting Summarizer")
+
     import_openai_key()
+    description()
+    st.subheader("How to use")
     uploaded = summary_welcome()
     generate_summary(uploaded)

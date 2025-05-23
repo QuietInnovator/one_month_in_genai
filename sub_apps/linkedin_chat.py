@@ -11,6 +11,19 @@ PAGE_DESCRIPTION = "Chat with Chadi's LinkedIn profile."
 # Set your OpenAI API key
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
+#----------- description ----------
+def description():
+    """
+    Description of the app
+    input: none
+    output: none
+    """
+    st.subheader("Description")
+    st.write("""
+            My fourth project solves yet another pain which is not having enough time to interview Interview all the job applicants.
+             So this project provides away to chat with the persona of the applicant portrait by their LinkedIn profile
+             """)
+
 def chat_with_openai_stream(system_prompt, message, history):
     """
     Chat with OpenAI using streaming response.
@@ -118,6 +131,7 @@ def handle_chat_interaction():
 
 def main():
     """Main application function."""
+    description()
     st.title(PAGE_TITLE)
     st.markdown(PAGE_DESCRIPTION)
 
