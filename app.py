@@ -26,6 +26,11 @@ if choice == "Home":
     st.write("7. PyPDF2")
     st.write("8. Streamlit Chat")
     st.write("9. Streamlit Secrets")
+    st.write("10. Serper")
+    st.write("11. Exa")
+    st.write("12. Pandas")
+    st.write("13. Datetime")
+    st.write("14. Requests")
 
 elif choice == "Summarize Meetings":
     # jira page
