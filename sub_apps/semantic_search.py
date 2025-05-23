@@ -1,3 +1,5 @@
+import streamlit as st
+
 def semantic_search_redirect():
     st.title("Semantic Search")
     st.write("This is the semantic search app")

@@ -2,6 +2,7 @@
 import streamlit as st
 import sub_apps.summarize_meetings as sm
 import sub_apps.research_writer as rw
+import sub_apps.semantic_search as ss
 
 import openai
 
@@ -9,7 +10,7 @@ st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", la
 
 # navigation
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer"])
+choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search"])
 
 if choice == "Home":
     # home page
@@ -18,7 +19,7 @@ if choice == "Home":
     st.write("I've used the following tools:")
     st.write("1. Cursor")
     st.write("2. Streamlit")
-    st.write("3. ")
+    st.write("3. Facebook AI Semantic Search (FAISS)")
     st.write("4. CrewAI")
     st.write("5. Cursor")
 elif choice == "Summarize Meetings":
@@ -29,3 +30,8 @@ elif choice == "Research Writer":
     # research writer page
     st.title("Research Writer")
     rw.research_writer_redirect()
+
+elif choice == "Semantic Search":
+    # semantic search page
+    st.title("Semantic Search")
+    ss.semantic_search_redirect()
