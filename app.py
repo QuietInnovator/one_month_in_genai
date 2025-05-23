@@ -4,12 +4,13 @@ import sub_apps.summarize_meetings as sm
 import sub_apps.research_writer as rw
 import sub_apps.semantic_search as ss
 import sub_apps.linkedin_chat as lc
+import sub_apps.flight_search as fs
 
 st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
 
 # navigation
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat"])
+choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search"])
 
 if choice == "Home":
     # home page
@@ -44,3 +45,8 @@ elif choice == "LinkedIn Chat":
     # linkedin chat page
     st.title("LinkedIn Chat")
     lc.main()
+
+elif choice == "Flight Search":
+    # flight search page
+    st.title("Flight Search")
+    fs.flight_search_main()
