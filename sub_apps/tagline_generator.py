@@ -1,11 +1,7 @@
 import streamlit as st
-
-import streamlit as st
 import openai
 import os
-from dotenv import load_dotenv
 
-load_dotenv()
 
 def get_text_input():
     """
