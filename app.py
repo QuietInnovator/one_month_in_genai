@@ -6,13 +6,14 @@ import sub_apps.semantic_search as ss
 import sub_apps.linkedin_chat as lc
 import sub_apps.flight_search as fs
 import sub_apps.email_composer as ec
-import sub_apps.tagline_generator as tg
+import sub_apps.tagline_generator as tg 
+import sub_apps.doc_editor as de
 
 st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
 
 # navigation
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator"])
+choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator", "Doc Editor"])
 
 if choice == "Home":
     # home page
@@ -62,3 +63,7 @@ elif choice == "Email Composer":
 elif choice == "Tagline Generator":
     # tagline generator page
     tg.main()
+
+elif choice == "Doc Editor":
+    # doc editor page
+    de.main()

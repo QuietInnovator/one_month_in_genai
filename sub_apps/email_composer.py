@@ -4,7 +4,7 @@ import streamlit as st
 
 def description():
     st.markdown("""
-    My sixth app is a simple email composer that uses a LLM to compose emails, Which is a great help for drafting emails and expanding Them.
+    My sixth app is a simple email composer that uses a LLM to compose emails, which is a great help for drafting emails and expanding them.
     It has three modes:
     - Mock: uses a mock LLM that returns a fixed response.
     - OpenAI: uses the OpenAI API to compose emails.

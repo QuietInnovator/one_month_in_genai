@@ -5,8 +5,9 @@ import linkedin_chat as lc
 import flight_search as fs
 import email_composer as ec
 import tagline_generator as tg
-
+import doc_editor as de
 def main():
+    de.main()
     fs.main()
     # ec.email_composer_ui()
     # tg.main()
