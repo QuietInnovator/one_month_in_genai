@@ -20,22 +20,46 @@ choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writ
 if choice == "Home":
     # home page
     st.title("Month of genAI")
-    st.write("This is a portfolio of the projects I've done in the last month of playing around with genAI")
-    st.write("I've used the following tools:")
-    st.write("1. Cursor")
-    st.write("2. Streamlit")
-    st.write("3. Facebook AI Semantic Search (FAISS)")
-    st.write("4. CrewAI")
-    st.write("5. Cursor")
-    st.write("6. OpenAI")
-    st.write("7. PyPDF2")
-    st.write("8. Streamlit Chat")
-    st.write("9. Streamlit Secrets")
-    st.write("10. Serper")
-    st.write("11. Exa")
-    st.write("12. Pandas")
-    st.write("13. Datetime")
-    st.write("14. Requests")
+    st.write("""
+    ### Technologies Used in QuietInnovator/one_month_in_genai
+
+    ## 🛠️ Languages
+    - Python
+
+    ## 🌐 Frameworks & Libraries
+    - Streamlit (for interactive web apps)
+    - Google Generative AI SDK (`google-generativeai`)
+    - OpenAI (optional, mentioned in code samples)
+    - Requests (HTTP requests)
+    - OS, sys, dotenv (Python standard and utility libraries)
+
+    ## 📦 Project Structure
+    - Modular app design (separate folders for sub-apps)
+    - Main entry point: app.py (Streamlit)
+    - requirements.txt for Python dependencies
+
+    ## 🚀 Deployment
+    - Designed for deployment on Heroku (per README)
+    - Custom domain plans (e.g., abifadel.net)
+
+    ## 📝 Features/Other Tools
+    - Use of `.env` files and dotenv for environment variables
+    - Git for version control
+    - README documentation for learning journey and project roadmap
+
+    ## 📂 Example Directory Layout
+    ```
+    one_month_in_genai/
+    ├── sub_apps/              # Modular sub-apps
+    ├── app.py                 # Main Streamlit app
+    ├── requirements.txt       # Dependencies
+    ├── .gitignore
+    └── README.md
+    ```
+    ---
+
+    This repository documents a month-long exploration of Generative AI, focusing on modular Python apps with Streamlit UIs and Google’s Generative AI SDK, intended for both learning and deployment.
+    """)
 
 elif choice == "Summarize Meetings":
     # jira page
