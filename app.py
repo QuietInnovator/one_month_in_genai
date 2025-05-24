@@ -53,7 +53,7 @@ elif choice == "LinkedIn Chat":
 
 elif choice == "Flight Search":
     # flight search page
-    fs.flight_search_main()
+    fs.main()
 
 elif choice == "Email Composer":
     # email composer page

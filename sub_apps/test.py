@@ -7,9 +7,9 @@ import email_composer as ec
 import tagline_generator as tg
 
 def main():
-    # fs.flight_search_main()
+    fs.main()
     # ec.email_composer_ui()
-    tg.main()
+    # tg.main()
     # sm.summaryapp()
     # rw.research_writer_redirect()
 if __name__ == "__main__":

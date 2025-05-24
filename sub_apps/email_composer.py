@@ -2,6 +2,15 @@ import streamlit as st
 
 # ---- 1. Mock and Real LLM Functions ----
 
+def description():
+    st.markdown("""
+    My sixth app is a simple email composer that uses a LLM to compose emails, Which is a great help for drafting emails and expanding Them.
+    It has three modes:
+    - Mock: uses a mock LLM that returns a fixed response.
+    - OpenAI: uses the OpenAI API to compose emails.
+    - Summarize: uses the OpenAI API to summarize emails.
+    """)
+
 def llm_api_mock(text: str, action: str) -> str:
     if action == "Expand":
         return text + " This is an expanded version."

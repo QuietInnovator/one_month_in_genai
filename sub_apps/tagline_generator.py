@@ -2,6 +2,11 @@ import streamlit as st
 import openai
 import os
 
+def description():
+    st.markdown("""
+    My seventh app is a tagline generator that uses a LLM to generate taglines for businesses.
+    It has a simple interface With the right fields and is a great help for generating taglines for businesses.
+    """)
 
 def get_text_input():
     """
