@@ -10,12 +10,13 @@ import sub_apps.tagline_generator as tg
 import sub_apps.doc_editor as de
 import sub_apps.email_title as et
 import sub_apps.regex_generator as rg
+import sub_apps.entity_extraction as ee
 
 st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
 
 # navigation
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator", "Doc Editor", "Email Title", "Regex Generator"])
+choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator", "Doc Editor", "Email Title", "Regex Generator", "Entity Extractor"])
 
 if choice == "Home":
     # home page
@@ -101,3 +102,7 @@ elif choice == "Email Title":
 elif choice == "Regex Generator":
     # regex generator page
     rg.main()
+
+elif choice == "Entity Extractor":
+    # entity extractor page
+    ee.main()
