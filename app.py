@@ -22,6 +22,7 @@ if choice == "Home":
     # home page
     st.title("Month of genAI")
     st.write("""
+        This is a project that I've been working on for the past month. It's a collection of Streamlit apps that I've been working on to experiment with Generative AI.
     ### Technologies Used in QuietInnovator/one_month_in_genai
 
     ## 🛠️ Languages
