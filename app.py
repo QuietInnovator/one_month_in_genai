@@ -15,7 +15,7 @@ import sub_apps.entity_extraction as ee
 import sub_apps.schedule_generator as sg
 import sub_apps.voice_analyser as va
 
-st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
+# st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
 
 # navigation
 st.sidebar.title("Navigation")
