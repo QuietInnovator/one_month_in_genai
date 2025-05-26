@@ -158,13 +158,23 @@ def make_csv_rows_weekly(weekly_schedule, weekdays):
             rows.append(row)
     return rows
 
-def generate_csv_from_gpt_weekly(weekly_schedule, start_date, end_date):
-    weekdays = get_weekdays_in_range(start_date, end_date)
-    rows = make_csv_rows_weekly(weekly_schedule, weekdays)
-    df = pd.DataFrame(rows)
-    csv_buffer = StringIO()
-    df.to_csv(csv_buffer, index=False)
-    return csv_buffer.getvalue()
+def display_snippet_cards(snippets):
+    st.markdown("### 🔎 Best Practices & Research Results")
+    for idx, snippet in enumerate(snippets):
+        with st.container():
+            st.markdown(
+                f"""
+                <div style="
+                    padding:0.5em 1em 0.5em 1em;
+                    border-left: 5px solid #0077FF;
+                    margin-bottom:0.7em;
+                ">
+                    <span style="color:#0077FF; font-weight:600; font-size:1.08em;">Tip {idx+1}</span><br>
+                    <span style="color:#256029; font-size:1.1em;">{snippet}</span>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
 
 # --- UI Helper for Cards ---
 
