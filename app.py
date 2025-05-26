@@ -1,5 +1,7 @@
 # imports
 import streamlit as st
+st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
+
 import sub_apps.home as h
 import sub_apps.summarize_meetings as sm
 import sub_apps.research_writer as rw
@@ -14,12 +16,11 @@ import sub_apps.regex_generator as rg
 import sub_apps.entity_extraction as ee
 import sub_apps.schedule_generator as sg
 import sub_apps.voice_analyser as va
-
-# st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
+import sub_apps.conclusion as con
 
 # navigation
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator", "Doc Editor", "Email Title", "Regex Generator", "Entity Extractor", "Schedule Generator", "Voice Analyser"])
+choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator", "Doc Editor", "Email Title", "Regex Generator", "Entity Extractor", "Schedule Generator", "Voice Analyser","Conclusion"])
 
 if choice == "Home":
     h.main()
@@ -76,3 +77,7 @@ elif choice == "Schedule Generator":
 elif choice == "Voice Analyser":
     # voice analyser page
     va.main()
+
+elif choice == "Conclusion":
+    # conclusion page
+    con.main()
