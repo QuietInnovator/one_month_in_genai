@@ -13,12 +13,13 @@ import sub_apps.email_title as et
 import sub_apps.regex_generator as rg
 import sub_apps.entity_extraction as ee
 import sub_apps.schedule_generator as sg
+import sub_apps.voice_analyser as va
 
 st.set_page_config(page_title="Chadi's 1 month of genAI", page_icon=":tada:", layout="wide")
 
 # navigation
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator", "Doc Editor", "Email Title", "Regex Generator", "Entity Extractor", "Schedule Generator"])
+choice = st.sidebar.radio("Go to", ["Home", "Summarize Meetings", "Research Writer", "Semantic Search", "LinkedIn Chat", "Flight Search", "Email Composer", "Tagline Generator", "Doc Editor", "Email Title", "Regex Generator", "Entity Extractor", "Schedule Generator", "Voice Analyser"])
 
 if choice == "Home":
     h.main()
@@ -71,3 +72,7 @@ elif choice == "Entity Extractor":
 elif choice == "Schedule Generator":
     # schedule generator page
     sg.main()
+
+elif choice == "Voice Analyser":
+    # voice analyser page
+    va.main()

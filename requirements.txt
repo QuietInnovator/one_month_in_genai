@@ -3,3 +3,8 @@ streamlit
 streamlit_chat
 PyPDF2
 google
+
+reportlab
+beautifulsoup4
+openai
+requests
