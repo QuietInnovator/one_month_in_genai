@@ -2,7 +2,7 @@ openai
 streamlit
 streamlit_chat
 PyPDF2
-google
+google-genai
 
 reportlab
 beautifulsoup4

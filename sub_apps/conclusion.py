@@ -15,13 +15,8 @@ def main():
     Now is a good time to tell you about me.
     I'm a software engineer turned data scientist with a passion for getting things done.
     
-             click here to see my linkedin profile
+    click here to see my linkedin profile: https://www.linkedin.com/in/chadi-abifadel/
              """)
-    if st.button("See my linkedin profile"):
-        st.write("https://www.linkedin.com/in/chadi-abifadel/")
-    else:
-        st.write("Thank you for using my app!")
     
-
 if __name__ == "__main__":
     main()
